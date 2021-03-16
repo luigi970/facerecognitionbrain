@@ -8,6 +8,9 @@ import Rank from './components/Rank/Rank';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import './App.css';
 
+// Api Key Clarifai here
+const app = new Clarifai.App({apiKey: '22a65b0736674a048b69dd5bc55543da'});
+
 const particlesOptions = {
 	particles: {
 		number: {
@@ -36,8 +39,6 @@ class App extends Component {
 
 	onButtonSubmit = () => {
 		this.setState({imageUrl: this.state.input});
-
-		let app = new Clarifai.App({apiKey: '22a65b0736674a048b69dd5bc55543da'});
 
 		app.models
 			.predict({
