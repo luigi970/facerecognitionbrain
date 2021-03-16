@@ -40,6 +40,7 @@ class App extends Component {
 	onButtonSubmit = () => {
 		this.setState({imageUrl: this.state.input});
 
+		// modelo clarifai
 		app.models
 			.predict({
 				id:'d02b4508df58432fbb84e800597b8959'
