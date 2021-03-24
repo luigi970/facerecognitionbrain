@@ -11,5 +11,5 @@ const FaceRecognition = ({ imageUrl, box }) => {
 		</div>
 		);
 }
- // style={{top: box.topRow, right: box.rightCol, bottom: box.bottomRow, left: box.leftCol}}
+
 export default FaceRecognition;
